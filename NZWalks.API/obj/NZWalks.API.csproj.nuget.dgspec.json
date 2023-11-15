@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\DotNet\\NewZealandWalks\\NZWalks\\NZWalks.API\\NZWalks.API.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\NewZealandWalks\\NZWalks\\NZWalks.API\\NZWalks.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\DotNet\\NewZealandWalks\\NZWalks\\NZWalks.API\\NZWalks.API.csproj": {
+    "C:\\Users\\Asus\\Desktop\\NewZealandWalks\\NZWalks\\NZWalks.API\\NZWalks.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\DotNet\\NewZealandWalks\\NZWalks\\NZWalks.API\\NZWalks.API.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\NewZealandWalks\\NZWalks\\NZWalks.API\\NZWalks.API.csproj",
         "projectName": "NZWalks.API",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\DotNet\\NewZealandWalks\\NZWalks\\NZWalks.API\\NZWalks.API.csproj",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\NewZealandWalks\\NZWalks\\NZWalks.API\\NZWalks.API.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\DotNet\\NewZealandWalks\\NZWalks\\NZWalks.API\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\NewZealandWalks\\NZWalks\\NZWalks.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
