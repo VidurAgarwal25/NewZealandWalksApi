@@ -34,12 +34,12 @@ namespace NZWalks.API.Controllers
         }
         //filtering, sorting and pagination happens only in get method
         //get walks
-        //GET: /api/walks?filterOn=Name&filterQuery=BeachWalk&sortBy=Name&isAscending=true
+        //GET: /api/walks?filterOn=Name&filterQuery=BeachWalk&sortBy=Name&isAscending=true&pageNumber=1&pageSize=10
         //user wants to filter on the basis of name columns that have track in it
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] string? filterOn, [FromQuery] string? filterQuery, [FromQuery] string ? sortBy, [FromQuery] bool? isAscending)
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn, [FromQuery] string? filterQuery, [FromQuery] string ? sortBy, [FromQuery] bool? isAscending, [FromQuery] int pageNumber =1, [FromQuery] int pageSize = 1000)
         {
-            var walksDomainModel = await walkRepository.GetAll(filterOn, filterQuery, sortBy, isAscending ?? true);
+            var walksDomainModel = await walkRepository.GetAll(filterOn, filterQuery, sortBy, isAscending ?? true, pageNumber, pageSize);
             return Ok(mapper.Map<List<WalkDto>>(walksDomainModel));
         }
 
