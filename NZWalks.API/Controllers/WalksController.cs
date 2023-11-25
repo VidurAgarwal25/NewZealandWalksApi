@@ -32,11 +32,14 @@ namespace NZWalks.API.Controllers
                 return Ok(mapper.Map<WalkDto>(walkDomainModel));
            
         }
+        //filtering, sorting and pagination happens only in get method
         //get walks
+        //GET: /api/walks?filterOn=Name&filterQuery=Track
+        //user wants to filter on the basis of name columns that have track in it
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn, [FromQuery] string? filterQuery)
         {
-            var walksDomainModel = await walkRepository.GetAll();
+            var walksDomainModel = await walkRepository.GetAll(filterOn, filterQuery);
             return Ok(mapper.Map<List<WalkDto>>(walksDomainModel));
         }
 
